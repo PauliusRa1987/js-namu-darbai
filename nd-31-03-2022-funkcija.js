@@ -23,13 +23,13 @@ function palyginimas (s1, s2){
 
 //3. Parašyti funkciją, kuri priimtų vieną skaičių. Turi būti grąžinamas rezultatas ar tie metai yra keliemieji.
 function metai(duotiMetai) {
-    if (0 === duotiMetai % 4 ) {
+    if (0 === duotiMetai % 4 && 0 === duotiMetai % 400) {
         return `Keliamieji metai`
     } else {
         return `Paprasti metai`
     }
 }
-const arKeliamieji = metai(2022);
+const arKeliamieji = metai(1700);
 console.log(`3.)`,arKeliamieji);
 
 //4. Parašyti funkciją, kuri priimtų vieną skaičių. Grąžinti skaičiaus kvadratą.
@@ -55,12 +55,7 @@ const ivestasSkaicius = skaiciuIntervalas(6);
 console.log(`5.)`,ivestasSkaicius);
 
 //6. Parašykite funkciją, kuri priimtų skaičių ir suskaičiuotų, iš kiek sveikų skaičių jos argumentas dalijasi be liekanos (išskyrus vienetą ir patį save).
-const priimtasSkaicius = 36;
-if (priimtasSkaicius[1] === 6) {
-    console.log('6) yes');
-}else{
-    console.log('6)no');
-}
+
 
 //7. Parašyti funkciją, kuri priimtų vieną kintamąjį - tekstą. Funkcija turi išvesti tekstą į ekraną ir dar papildomai parodyti jo ilgį (simbolių kiekį).
 function textas(s7) {
@@ -99,13 +94,9 @@ console.log(`9.)`,zodziuPalyginimas);
 
 //10. Parašyti funkciją, kuri priimtų vieną kintamąjį - tekstą. Suskaičiuoti, kiek tekste yra ‚a‘ raidžių.
 function raidziuSuma(s10) {
-    let aSuma = 0;
-    for (let i = 0; i < s10.length; i++) {
-        console.log(i);
-    }
-    
-    return `Tekstas turi ${aSuma} "a" raidziu.`
+    const raidesA = s10.split("a").length - 1;
+    return `Tekstas turi ${raidesA} "a" raidziu.`
 }
-const tekstas10 = `Noriu suzinoti, kiek siame tekste yra "a" raidziu.`;
+const tekstas10 = `Labas krabas ir arabas`;
 const sumaRaidziu = raidziuSuma(tekstas10);
-console.log(sumaRaidziu);
+console.log(`10.)`, sumaRaidziu);
