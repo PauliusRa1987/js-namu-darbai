@@ -58,7 +58,7 @@ const metai = 2030;
 const palukanos = 0.02;
 const indelis = 100;
 let bonusas = 0;
-for (let i = 2023; i <= 2030; i++) {
+for (let i = 1; i <= metai; i++) {
     bonusas = bonusas + (palukanos*indelis);
     const ataskaita = `Metai: ${i}; Palukanos:${bonusas}; Indelis ${indelis + bonusas}`
     console.log(ataskaita);
@@ -66,7 +66,7 @@ for (let i = 2023; i <= 2030; i++) {
 //10. Keliamieji metai turi 366 dienas, paprastieji – 365. Visi metai, išskyrus šimtmečius, yra keliamieji, jie dalūs iš 4. Šimtmečių metai yra keliamieji, jeigu dalūs 400. Pvz.: 1600 metai yra keliamieji, nes dalūs iš 400, o 1700 – paprastieji. Raskite visus mūsų eros keliamuosius metus.
 for (let i = 0; i < 500; i++) {
     if ([i]%4  && [i]%400 !== 0) {
-        console.log(i);
+        
     } 
 }
 // Cia sugebejau parsyti programa kuri nekeliamuosius metus isspausdina, bet nesugebejau padaryti kad butu atvirksciai... 
