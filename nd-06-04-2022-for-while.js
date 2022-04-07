@@ -10,7 +10,7 @@ while (skaiciuSuma < 100) {
 //2. Generuoti atsitiktinius skaičius nuo 1 iki 10 tol, kol sugeneruotų skaičių suma bus dali iš 7.
 let IsOro = 0;
 let sugeneruotaSuma = 0;
-while (sugeneruotaSuma % 7 !== 0) {
+while (sugeneruotaSuma % 7 !== 0 || sugeneruotaSuma === 0) {
     IsOro = Math.floor(Math.random()*(10 - 1)+1);
     sugeneruotaSuma += IsOro;
     console.log(sugeneruotaSuma);
