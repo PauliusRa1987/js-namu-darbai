@@ -29,7 +29,7 @@ function metai(duotiMetai) {
         return `Paprasti metai`
     }
 }
-const arKeliamieji = metai(1700);
+const arKeliamieji = metai(1600);
 console.log(`3.)`,arKeliamieji);
 
 //4. Parašyti funkciją, kuri priimtų vieną skaičių. Grąžinti skaičiaus kvadratą.

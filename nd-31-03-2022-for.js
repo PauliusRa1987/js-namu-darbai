@@ -33,9 +33,10 @@ for (let i = 0; i < 5; i++) {
 }
 
 //6. Naudojant ciklą, atspausdinti skaičius nuo 1 iki 20. Nespausdinti skaičių, kurie dalinasi iš 3.
-for (let i = 1; i <= 6; i++) {
-    if ([i]%3 !== 0) {
-        console.log(i);
+for (let i = 1; i <= 20; i++) {
+    let skaicius = i;
+    if (skaicius%3 !== 0) {
+        console.log(skaicius);
     }
 }
 
@@ -54,20 +55,22 @@ for (let i = 1; i <= n; i++) {
     console.log(matavimas);
 }
 //9. Bankas moka 2% metinių palūkanų. Indėlininkas pasidėjo į banką 100e. Sudarykite kasmetinę banko atskaitą klientui iki n metų. Ataskaitoje pateikite: metus, palūkanas, indėlį.
-const metai = 2030;
 const palukanos = 0.02;
 const indelis = 100;
 let bonusas = 0;
-for (let i = 1; i <= metai; i++) {
+for (let i = 1; i <= n; i++) {
     bonusas = bonusas + (palukanos*indelis);
     const ataskaita = `Metai: ${i}; Palukanos:${bonusas}; Indelis ${indelis + bonusas}`
     console.log(ataskaita);
 }
 //10. Keliamieji metai turi 366 dienas, paprastieji – 365. Visi metai, išskyrus šimtmečius, yra keliamieji, jie dalūs iš 4. Šimtmečių metai yra keliamieji, jeigu dalūs 400. Pvz.: 1600 metai yra keliamieji, nes dalūs iš 400, o 1700 – paprastieji. Raskite visus mūsų eros keliamuosius metus.
-for (let i = 0; i < 500; i++) {
-    if ([i]%4  && [i]%400 !== 0) {
-        
-    } 
+
+for (let i = 0; i <= 2022; i++) {    
+    const reikalingiMetai = i;
+   if (reikalingiMetai % 400 === 0 || reikalingiMetai % 100 !== 0 && reikalingiMetai  % 4 === 0) {
+      console.log(reikalingiMetai);
+   } 
 }
+
 // Cia sugebejau parsyti programa kuri nekeliamuosius metus isspausdina, bet nesugebejau padaryti kad butu atvirksciai... 
 
