@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./nd-31-03-2022-for.js",
+    "dev": "nodemon ./nd-07-04-2022-arrays.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
