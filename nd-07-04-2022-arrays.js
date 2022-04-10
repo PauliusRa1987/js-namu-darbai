@@ -39,9 +39,21 @@ console.log(condikas.length);
 
 //5. Sukurti masyvą, kurio ilgis 100, o reikšmės – raidės M,N,O,P. Suskaičiuoti, kurios raidės buvo daugiausia.
 let bankas = [];
-let raidziuMasyvoReiksmes = 'MNOP'.split('');
+let raidziuMasyvoReiksmes = 'MNOO'.split('');
 for (let i = 0; i < 25; i++) {
     bankas.push(...raidziuMasyvoReiksmes);    
 }console.log(bankas);
 console.log(bankas.length);
-console.log(Math.max(bankas));
+
+//6. Sugeneruoti masyvą, kurio ilgis 20, o reikšmės masyve turi būti nuo 10 iki 50. Reikšmės masyve turi būti unikalios, tai yra – nesikartoti.
+let bankas1 = [];
+for (let i = 0; i < 20; i++) {
+    let skaitmuos = 10 + Math.floor(Math.random() * (50 - 10 + 1));
+    if (bankas1.indexOf(skaitmuos) === - 1) {
+        bankas1.push(skaitmuos);
+    }
+}
+console.log(bankas1);
+console.log(bankas1.length);
+
+
