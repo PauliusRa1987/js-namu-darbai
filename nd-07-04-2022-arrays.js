@@ -45,6 +45,62 @@ for (let i = 0; i < 25; i++) {
 }console.log(bankas);
 console.log(bankas.length);
 
+let bnkM = 0;
+let bnkN = 0;
+let bnkO = 0;
+let bnkP = 0;
+
+for (let i = 0; i < bankas.length; i++) {
+    if (bankas[i] === 'M') {
+        bnkM++
+    }
+    if (bankas[i] === 'N') {
+        bnkN++
+    }
+    if (bankas[i] === 'O') {
+        bnkO++
+    }
+    if (bankas[i] === 'P') {
+        bnkP++
+    }
+    
+}
+console.log(`Raidziu yra: M-${bnkM} N-${bnkN} O-${bnkO} P-${bnkP}`);
+
+
+// teisingas sprendimas
+/*
+const raides = ['A', 'B', 'C', 'D'];
+
+const masyvas7 = [];
+
+for (let i = 0; i < 100; i++) {
+    masyvas7.push(raides[rand(0,3)]);
+}
+
+console.log(masyvas7);
+
+let countA = 0;
+let countB = 0;
+let countC = 0;
+let countD = 0;
+
+for (let i = 0; i < masyvas7.length; i++) {
+    if (masyvas7[i] === 'A'){
+        countA++;
+    }
+    if (masyvas7[i] === 'B'){
+        countB++;
+    }
+    if (masyvas7[i] === 'C'){
+        countC++;
+    }
+    if (masyvas7[i] === 'D'){
+        countD++;
+    }
+}
+*/
+
 //6. Sugeneruoti masyvą, kurio ilgis 20, o reikšmės masyve turi būti nuo 10 iki 50. Reikšmės masyve turi būti unikalios, tai yra – nesikartoti.
 let bankas1 = [];
 for (let i = 0; i < 20; i++) {
@@ -55,5 +111,8 @@ for (let i = 0; i < 20; i++) {
 }
 console.log(bankas1);
 console.log(bankas1.length);
+
+
+
 
 
