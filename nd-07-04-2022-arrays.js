@@ -68,7 +68,7 @@ for (let i = 0; i < bankas.length; i++) {
 console.log(`Raidziu yra: M-${bnkM} N-${bnkN} O-${bnkO} P-${bnkP}`);
 
 
-// teisingas sprendimas
+// teisingas sprendimas - paimtas is Kęstučio sprendimo.
 /*
 const raides = ['A', 'B', 'C', 'D'];
 
