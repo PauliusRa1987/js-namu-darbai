@@ -103,7 +103,7 @@ for (let i = 0; i < masyvas7.length; i++) {
 
 //6. Sugeneruoti masyvą, kurio ilgis 20, o reikšmės masyve turi būti nuo 10 iki 50. Reikšmės masyve turi būti unikalios, tai yra – nesikartoti.
 let bankas1 = [];
-for (let i = 0; i < 20; i++) {
+while (bankas1.length < 20){
     let skaitmuos = 10 + Math.floor(Math.random() * (50 - 10 + 1));
     if (bankas1.indexOf(skaitmuos) === - 1) {
         bankas1.push(skaitmuos);
